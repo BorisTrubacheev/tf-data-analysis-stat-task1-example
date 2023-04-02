@@ -8,6 +8,5 @@ def solution(x: np.array) -> float:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    E = np.mean(x)
-    D = np.var(x)
-    return np.log(E/(np.sqrt(D/E**2 + 1))) # Ваш ответ
+    y = [np.log(n - 99) for n in x]
+    return np.mean(y)
